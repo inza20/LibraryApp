@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">My Library</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div id="message">  
+        <!-- msg 2b populated wd jS -->
+    </div>
+
+    <div class="container  my-3 " style="width: 50%;">
+        <h1>Welcome to your library!</h1>
+        <br>
+
+        <!-- Form -->
+
+        <form id="libraryForm">
+            <div class="row mb-3">
+                <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" placeholder="Book Name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="author" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" placeholder="Author">
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="fiction" value="fiction">
+                        <label class="form-check-label" for="fiction">
+                            Fiction
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="programming" value="programming">
+                        <label class="form-check-label" for="programming">
+                            Programming
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="cooking" value="cooking">
+                        <label class="form-check-label" for="cooking">
+                            Cooking
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <button type="submit" class="btn btn-primary btn-dark"> Add Book </button>
+        </form>
+
+        <br><hr>
+    
+
+    <!-- Table -->
+
+    <h1>Your Books</h1><br>
+
+    <table class="table table-striped" st>
+        <thead class="table-dark">
+          <tr>
+            
+            <th scope="col">Name</th>
+            <th scope="col">Author</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+          
+          <!-- Rest of the rows will be populated using template literals in jS -->
+
+        </tbody>
+      </table>
+
+      <br><br>
+
+      <div >
+        
+        <footer>
+            <p style="margin-top: 45px;">Created by Inshirah Zainab</p>
+
+        </footer>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
